@@ -29,3 +29,10 @@ spec:
         command:
         - /metrics-server
         - --source=kubernetes.summary_api:''
+        resources:
+          limits:
+            cpu: 200m
+            memory: 200Mi
+          requests:
+            cpu: 200m
+            memory: 200Mi
